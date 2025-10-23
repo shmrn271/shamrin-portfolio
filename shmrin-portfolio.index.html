@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammed Shamrin | Digital Marketing Portfolio</title>
+    
+
+<script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Custom Styles based on your palette */
+        :root {
+            --primary-accent: #3498DB; /* Vibrant Sky Blue */
+            --dark-background-rgb: 0, 0, 0; /* Pure black, for use in rgba */
+            --card-background-rgb: 26, 35, 74; /* Deep Space Blue (#1A234A) */
+            --text-color-main: #A8D7FF; /* Pale Cyan-Blue */
+            --text-color-heading: #FFFFFF; /* Pure white for titles */
+            --secondary-elements: #2C3A66; /* Matching Dark Slate Blue */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            /* GALAXY/NEBULA BACKGROUND STYLING (Adjusted to deeper blues) */
+            background: linear-gradient(145deg, #02081E 0%, #000000 70%);
+            background-attachment: fixed;
+            background-size: cover;
+            color: var(--text-color-main);
+            line-height: 1.6;
+            min-height: 100vh; /* Ensure background covers full height */
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-color-heading);
+        }
+        .header-bg {
+            /* Semi-transparent black for header/footer to see galaxy through */
+            background-color: rgba(var(--dark-background-rgb), 0.8);
+            backdrop-filter: blur(5px);
+        }
+        .section-card {
+            /* Slightly transparent card to hint at the background */
+            background-color: rgba(var(--card-background-rgb), 0.95);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+            border-top: 4px solid var(--primary-accent);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .section-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+        }
+        .metric-card {
+            background-color: rgba(var(--card-background-rgb), 0.95);
+            border-left: 5px solid var(--primary-accent);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease;
+        }
+        .metric-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+        }
+        .skill-tag {
+            background-color: var(--secondary-elements);
+            color: var(--text-color-heading);
+            transition: background-color 0.3s ease;
+        }
+        .skill-tag:hover {
+            background-color: var(--primary-accent);
+            color: black;
+        }
+        .btn-primary {
+            background-color: var(--primary-accent);
+            color: black;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #2980B9; /* Slightly darker shade of the new primary accent */
+        }
+        /* Hero Section Overlay for Contrast */
+        .hero-section-overlay {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(13, 22, 38, 0.7) 100%);
+        }
+        /* Who I Am section background - simplified to rely on body background */
+        .who-i-am-bg {
+            position: relative;
+            isolation: isolate;
+            background: transparent; /* Rely on body background */
+        }
+        .who-i-am-bg::after {
+            content: none; /* Removed previous opaque overlay */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    
+
+<header class="header-bg shadow-lg py-6 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center text-center sm:text-left">
+            <div class="text-4xl font-extrabold text-white tracking-wide">
+                MUHAMMED SHAMRIN
+            </div>
+            <div class="text-sm mt-3 sm:mt-0">
+                <p class="text-gray-300">AL-Nahyan, Abu Dhabi</p>
+                <p class="mt-1 text-gray-200 font-medium">+971 056 984 3096 | <a href="mailto:shmrn271@gmail.com" class="text-primary-accent hover:underline">shmrn271@gmail.com</a></p>
+            </div>
+        </div>
+    </header>
+
+    
+
+<section class="relative py-20 px-4 text-center overflow-hidden">
+        <div class="absolute inset-0 hero-section-overlay z-0"></div>
+        <div class="relative z-10 max-w-4xl mx-auto">
+            <img src="uploaded:1-7c2aeeaf.jpg" alt="Muhammed Shamrin" class="w-60 object-cover object-center mx-auto mb-6 border-4 border-primary-accent shadow-xl">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4 leading-tight">
+                The Conversion Architect | Performance & Scalable Growth
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 leading-relaxed max-w-3xl mx-auto">
+                I transform digital strategy into tangible results. With 2 years of intense, metric-focused experience, I specialize in Performance Marketing (PPC/Meta) and high-impact Conversion Rate Optimization (CRO), driving 3.5X ROAS and 20% lead capture improvements. My mission is to build profitable customer journeys and accelerate growth within the dynamic GCC/MENA region.
+            </p>
+            <a href="#contact" class="inline-block mt-8 px-8 py-3 rounded-full text-lg font-semibold btn-primary shadow-lg hover:shadow-xl transform hover:scale-105 transition-all">
+                Let's Connect & Build Growth <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    
+
+<section id="who-i-am" class="py-16 px-4 who-i-am-bg">
+        <div class="max-w-4xl mx-auto text-center relative z-10 bg-[var(--card-background)] p-8 rounded-2xl shadow-2xl border border-primary-accent/50 section-card">
+            <h2 class="text-4xl font-extrabold mb-6 text-white section-header pb-4">WHO I AM</h2>
+            <p class="text-xl text-gray-200 mb-6 leading-relaxed">
+                I am Muhammed Shamrin, a Digital Marketing Specialist driven by a singular purpose: to achieve measurable business outcomes. My journey in the fast-paced Indian digital landscape has forged a robust foundation in data-driven decision-making and efficient campaign execution. I thrive on dissecting complex data, identifying bottlenecks, and implementing precise optimizations that directly impact the bottom line.
+            </p>
+            <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                Beyond the numbers, I am a proactive learner with an insatiable curiosity for market dynamics. Having successfully navigated diverse consumer behaviors, I am now passionately focused on applying my expertise to the unique cultural and digital nuances of the UAE market. I believe in continuous growth, both for myself and for the organizations I contribute to, ensuring strategies are always cutting-edge and ROI-focused.
+            </p>
+            <div class="flex flex-wrap justify-center gap-6 mt-8">
+                <span class="px-5 py-2 bg-primary-accent text-dark-background rounded-full font-semibold text-lg shadow-md skill-tag"><i class="fas fa-brain mr-2"></i> Analytical Thinker</span>
+                <span class="px-5 py-2 bg-primary-accent text-dark-background rounded-full font-semibold text-lg shadow-md skill-tag"><i class="fas fa-bolt mr-2"></i> Fast Learner</span>
+                <span class="px-5 py-2 bg-primary-accent text-dark-background rounded-full font-semibold text-lg shadow-md skill-tag"><i class="fas fa-bullseye mr-2"></i> Results-Oriented</span>
+            </div>
+        </div>
+    </section>
+
+    
+
+<section class="py-16 px-4">
+        <h2 class="text-4xl font-extrabold text-center mb-12 section-header pb-4">PROVEN IMPACT: Results That Speak</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            
+            
+
+<div class="metric-card p-8 rounded-2xl text-center">
+                <i class="fas fa-money-bill-wave text-5xl text-primary-accent mb-4"></i>
+                <div class="text-6xl font-extrabold text-white mb-2 leading-none">3.5X+</div>
+                <div class="text-xl font-bold text-gray-100 mt-3">Return on Ad Spend (ROAS)</div>
+                <p class="text-sm text-gray-400 mt-3">Consistently achieved target ROAS across $10K+ monthly budgets on Google & Meta, driving optimal ad performance.</p>
+            </div>
+
+            
+
+<div class="metric-card p-8 rounded-2xl text-center">
+                <i class="fas fa-funnel-dollar text-5xl text-primary-accent mb-4"></i>
+                <div class="text-6xl font-extrabold text-white mb-2 leading-none">20%</div>
+                <div class="text-xl font-bold text-gray-100 mt-3">Lead Capture Rate Improvement</div>
+                <p class="text-sm text-gray-400 mt-3">Engineered conversion lifts through rigorous A/B testing and strategic landing page development (CRO).</p>
+            </div>
+
+            
+
+<div class="metric-card p-8 rounded-2xl text-center">
+                <i class="fas fa-chart-line text-5xl text-primary-accent mb-4"></i>
+                <div class="text-6xl font-extrabold text-white mb-2 leading-none">15%</div>
+                <div class="text-xl font-bold text-gray-100 mt-3">Organic Traffic Growth (Non-Branded)</div>
+                <p class="text-sm text-gray-400 mt-3">Boosted visibility and quality traffic through meticulous on-page SEO monitoring and tactical optimization.</p>
+            </div>
+        </div>
+    </section>
+
+    
+
+<section class="py-16 px-4">
+        <h2 class="text-4xl font-extrabold text-center mb-12 section-header pb-4">EXPERIENCE: Crafting Digital Success</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+
+            
+
+<div class="section-card p-8 rounded-2xl">
+                <h3 class="text-3xl font-bold text-primary-accent mb-4">Digital Marketing Team Lead</h3>
+                <p class="text-lg text-gray-300 mb-4">MYNES DIGITAL Private Limited | 2023-2025</p>
+                <ul class="list-disc ml-6 text-gray-200 space-y-3 text-lg">
+                    <li>Performance & Paid Media: Managed $10K+ monthly ad spend, delivering consistent 3.5X ROAS via Google & Meta Ads.</li>
+                    <li>CRO & Funnel Optimization: Spearheaded A/B testing and landing page development, resulting in a 20% increase in lead capture.</li>
+                    <li>Lead Generation & Content: Drove 18% engagement boost and 100+ inbound leads monthly through performance-driven content strategy.</li>
+                </ul>
+            </div>
+
+            
+
+<div class="section-card p-8 rounded-2xl">
+                <h3 class="text-3xl font-bold text-primary-accent mb-4">Data-Driven Strategy & Analytics</h3>
+                <p class="text-lg text-gray-300 mb-4">Key responsibilities spanning previous roles and skill development</p>
+                <ul class="list-disc ml-6 text-gray-200 space-y-3 text-lg">
+                    <li>GA4 Mastery: Proficient in Google Analytics 4 (GA4) for deep-dive data analysis, informing critical budget reallocation and strategic campaign adjustments.</li>
+                    <li>SEO Expertise: Implemented and monitored on-page SEO strategies, contributing to the 15% lift in non-branded organic traffic.</li>
+                    <li>Reporting & Insights: Translated complex campaign data into clear, actionable insights for senior management, driving informed decision-making.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    
+
+<section class="py-16 px-4">
+        <h2 class="text-4xl font-extrabold text-center mb-12 section-header pb-4">SKILL STACK: My Digital Arsenal</h2>
+        <div class="section-card p-8 rounded-2xl max-w-6xl mx-auto">
+            <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+                <span class="skill-tag px-5 py-2 rounded-full font-semibold text-lg shadow-md">Performance Marketing</span>
+                <span class="skill-tag px-5 py-2 rounded-full font-semibold text-lg shadow-md">PPC (Google Ads, Meta Ads)</span>
+                <span class="skill-tag px-5 py-2 rounded-full font-semibold text-lg shadow-md">Conversion Rate Optimization (CRO)</span>
+                <span class="skill-tag px-5 py-2 rounded-full font-semibold text-lg shadow-md">Google Analytics 4 (GA4)</span>
+                <span class="skill-tag px-5 py-2 rounded-full font-semibold text-lg shadow-md">Google Tag Manager (GTM)</span>
+                <span class="skill-tag px-5 py-2 rounded-full font-semibold text-lg shadow-md">On-page & Local SEO</span>
+                <span class="skill-tag px-5 py-2 rounded-full font-semibold text-lg shadow-md">Content Marketing & Strategy</span>
+                <span class="skill-tag px-5 py-2 rounded-full font-semibold text-lg shadow-md">Canva & Basic Design</span>
+                <span class="skill-tag px-5 py-2 rounded-full font-semibold text-lg shadow-md">Data Analysis & Reporting</span>
+                <span class="skill-tag px-5 py-2 rounded-full font-semibold text-lg shadow-md">A/B Testing</span>
+                <span class="skill-tag px-5 py-2 rounded-full font-semibold text-lg shadow-md">Strategic Planning</span>
+                <span class="skill-tag px-5 py-2 rounded-full font-semibold text-lg shadow-md">Adaptability & Market Research</span>
+            </div>
+        </div>
+    </section>
+
+    
+
+<section id="contact" class="py-16 px-4 text-center">
+        <h2 class="text-4xl font-extrabold text-white mb-6">READY TO DRIVE YOUR GROWTH?</h2>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-10">
+            Let's discuss how my proven performance marketing strategies and dedication to measurable results can accelerate your success in the UAE. I'm eager to contribute my expertise to your team.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-6">
+            <a href="mailto:shmrn271@gmail.com" class="inline-block px-10 py-4 rounded-full text-xl font-bold btn-primary shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all">
+                Email Me <i class="fas fa-envelope ml-3"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/muhammed-shamrin-9a562a298/" target="_blank" class="inline-block px-10 py-4 rounded-full text-xl font-bold bg-gray-600 text-white shadow-xl hover:bg-gray-700 transform hover:scale-105 transition-all">
+                Connect on LinkedIn <i class="fab fa-linkedin ml-3"></i>
+            </a>
+        </div>
+    </section>
+    
+    
+
+<footer class="text-gray-500 mt-16 border-t border-secondary-elements py-6" style="background-color: rgba(var(--dark-background-rgb), 0.8); backdrop-filter: blur(5px);">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            &copy; 2025 Muhammed Shamrin. All Rights Reserved. Crafted for Impact.
+        </div>
+    </footer>
+
+</body>
+</html>
